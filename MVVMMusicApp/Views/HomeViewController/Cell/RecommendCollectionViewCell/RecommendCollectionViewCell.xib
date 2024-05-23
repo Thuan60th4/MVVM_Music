@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendCollectionViewCell" customModule="MVVMMusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fE0-dY-TSV">
+                        <rect key="frame" x="0.0" y="0.0" width="438" height="112"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S5E-ak-iYo">
+                                <rect key="frame" x="0.0" y="13" width="87.5" height="85.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S5E-ak-iYo" secondAttribute="height" id="j46-U4-Tv7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbx-k1-CyN">
+                                <rect key="frame" x="95.5" y="28.5" width="342.5" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Song name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-mc-7Rc">
+                                        <rect key="frame" x="0.0" y="5" width="337.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="749" text="Artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eex-6j-Hy2">
+                                        <rect key="frame" x="0.0" y="28.5" width="337.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Eex-6j-Hy2" secondAttribute="bottom" constant="5" id="6uz-c7-1gn"/>
+                                    <constraint firstItem="9Xw-mc-7Rc" firstAttribute="leading" secondItem="cbx-k1-CyN" secondAttribute="leading" id="Kd4-lv-gYb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eex-6j-Hy2" secondAttribute="trailing" constant="5" id="Lof-Q3-gHT"/>
+                                    <constraint firstItem="Eex-6j-Hy2" firstAttribute="leading" secondItem="cbx-k1-CyN" secondAttribute="leading" id="U0Q-oe-xOD"/>
+                                    <constraint firstItem="9Xw-mc-7Rc" firstAttribute="top" secondItem="cbx-k1-CyN" secondAttribute="top" constant="5" id="YCd-TM-ve1"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Xw-mc-7Rc" secondAttribute="trailing" constant="5" id="bG1-J4-Lro"/>
+                                    <constraint firstItem="Eex-6j-Hy2" firstAttribute="top" secondItem="9Xw-mc-7Rc" secondAttribute="bottom" constant="2" id="jud-NF-23Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S5E-ak-iYo" firstAttribute="width" secondItem="fE0-dY-TSV" secondAttribute="width" multiplier="0.2" id="6FV-A9-l4F"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fE0-dY-TSV" secondAttribute="bottom" id="3SD-d3-41i"/>
+                <constraint firstItem="fE0-dY-TSV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6R4-vR-gPt"/>
+                <constraint firstAttribute="trailing" secondItem="fE0-dY-TSV" secondAttribute="trailing" id="sWS-cr-Uvf"/>
+                <constraint firstItem="fE0-dY-TSV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="whu-2f-S2P"/>
+            </constraints>
+            <size key="customSize" width="438" height="112"/>
+            <connections>
+                <outlet property="imageViewOutlet" destination="S5E-ak-iYo" id="tfe-vc-2bB"/>
+                <outlet property="labelOutlet" destination="9Xw-mc-7Rc" id="7qi-Sn-Ef5"/>
+                <outlet property="subLabelOutlet" destination="Eex-6j-Hy2" id="NUH-14-lfU"/>
+            </connections>
+            <point key="canvasLocation" x="417.39130434782612" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
